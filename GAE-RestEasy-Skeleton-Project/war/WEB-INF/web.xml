@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	<!-- ################## Servlets  #################################################################### -->
+
+	<servlet>
+		<servlet-name>GAEuRESTEasySkeletonDemoServlet</servlet-name>
+		<servlet-class>de.mosst.skeletons.gae.resteasy.servlet.GAEuRESTEasySkeletonDemoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GAEuRESTEasySkeletonDemoServlet</servlet-name>
+		<url-pattern>/skeleton</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SecureServlet</servlet-name>
+		<servlet-class>de.mosst.skeletons.gae.resteasy.servlet.SecureServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SecureServlet</servlet-name>
+		<url-pattern>/secure</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- ################################################################################################ -->
+	<!-- ################## RESTEasy #################################################################### -->
+
+	<context-param>
+		<param-name>resteasy.scan.resources</param-name>
+		<param-value>true</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>resteasy.providers</param-name>
+		<param-value>
+            de.mosst.skeletons.gae.resteasy.interceptor.DemoInterceptor
+        </param-value>
+	</context-param>
+
+
+	<context-param>
+		<param-name>resteasy.servlet.mapping.prefix</param-name>
+		<param-value>/backend/</param-value>
+	</context-param>
+
+
+	<listener>
+		<listener-class>org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>RemoteService</servlet-name>
+		<servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RemoteService</servlet-name>
+		<url-pattern>/backend/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- ###################################################################################################### -->
+
+
+	<!-- ################## Security ########################################################################## -->
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>profile</web-resource-name>
+			<url-pattern>/secure/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>*</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>admin</web-resource-name>
+			<url-pattern>/admin/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<!-- ###################################################################################################### -->
+</web-app>

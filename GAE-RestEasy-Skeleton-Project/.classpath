@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" output="test-classes" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jackson-core-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jackson-jaxrs-1.9.13.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jackson-xc-1.9.13.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jaxrs-api-3.0.6.Final.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/resteasy-jackson-provider-3.0.6.Final.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/resteasy-jaxrs-3.0.6.Final.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/GAE-Testing-Library"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Mockito&amp;PowerMock"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

@@ -1,0 +1,14 @@
+/appengine-api-1.0-sdk-*.jar
+/appengine-api-labs.jar
+/appengine-endpoints-deps.jar
+/appengine-endpoints.jar
+/appengine-jsr107cache-*.jar
+/asm-*.jar
+/datanucleus-api-jdo-*.jar
+/datanucleus-api-jpa-*.jar
+/datanucleus-appengine-*.jar
+/datanucleus-core-*.jar
+/geronimo-jpa_2.0_spec-*.jar
+/jdo-api-*.jar
+/jsr107cache-*.jar
+/jta-*.jar

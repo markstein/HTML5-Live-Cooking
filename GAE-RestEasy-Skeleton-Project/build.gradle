@@ -1,0 +1,41 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    mavenRepo urls: "http://repository.jboss.org/nexus/content/groups/public/"
+}
+
+
+dependencies {
+    compile 'org.jboss.resteasy:resteasy-jaxrs:3.0.6.Final'
+    compile 'org.jboss.resteasy:resteasy-jackson-provider:3.0.6.Final'
+    compile 'org.jboss.resteasy:resteasy-jsapi:3.0.6.Final'
+    compile 'org.codehaus.jackson:jackson-xc:1.9.13'
+    compile 'org.codehaus.jackson:jackson-jaxrs:1.9.13'
+
+    testCompile 'org.mockito:mockito-core:1.9.5'
+    testCompile 'org.powermock:powermock-module-junit4:1.5.4'
+    testCompile 'org.powermock:powermock-api-mockito:1.5.4'
+	
+    testCompile 'net.sourceforge.htmlunit:htmlunit:2.13'
+	
+}
+
+
+task getJars << {
+
+    getJars(new File("compile-jars"), configurations.compile, null);
+    getJars(new File("test-jars"), configurations.testCompile, configurations.compile);  
+}
+
+void getJars(File dir, Configuration incConfig, Configuration exConfig){
+    println "~~~~~~ Get Jars for " + incConfig;
+    dir.mkdir();
+    incConfig.each { File file -> 
+		if(exConfig == null || !exConfig.contains(file)){
+	        println file.name 
+	        File jarFile = new File(dir, file.name)
+	        jarFile << file.bytes
+		}
+    }
+}
