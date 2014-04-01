@@ -1,0 +1,17 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+$gray:                   lighten(#000, 33.5%); 
+$gray-light:             lighten(#000, 60%);  
+$gray-lighter:           lighten(#000, 93.5%); 
+
+$body-bg:               #000000;
+$text-color:            $gray;
+
+$brand-primary:         #1e8eef;
+
+$input-bg:					$gray;
+$input-color:				$gray-lighter;
+$input-bg-disabled:		$gray;
+$input-border:				$gray-light;
+
+@import 'sass-bootstrap/lib/bootstrap';
