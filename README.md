@@ -2,6 +2,8 @@
 
 Hier findet Ihr die versprochenen Informationen zum Event [HTML5 Live-Cooking] (https://www.xing.com/events/html5-live-cooking-1340960) der JUG-Ostfalen vom 27.03.2014 bei der TRIOLOGY GmbH in Braunschweig.
 
+**Wir würden uns freuen, wenn Ihr uns über folgenden Link ein kurzes Feeback hinterlasst: http://goo.gl/uWM4HP.**
+
 #### Quellen und Folien zum Vortrag
 
 * [GAE + RESTEasy Skeleton] (https://github.com/markstein/HTML5-Live-Cooking/tree/master/GAE-RestEasy-Skeleton-Project)
@@ -14,3 +16,5 @@ http://foto-gether.appspot.com
 
 
 ![Screenshot](https://raw.githubusercontent.com/markstein/HTML5-Live-Cooking/master/foto-gether-screen.jpg)
+
+
