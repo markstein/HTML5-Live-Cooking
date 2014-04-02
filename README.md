@@ -9,7 +9,7 @@ Hier findet Ihr die versprochenen Informationen zum Event [HTML5 Live-Cooking] (
 * [Frontend (Enwticklungsumgebung)] (https://github.com/markstein/HTML5-Live-Cooking/tree/master/frontend)
 * [Präsentation Frontend (Folien)] (https://github.com/markstein/HTML5-Live-Cooking/blob/master/HTML5%20live%20Cooking.pdf?raw=true)
 
-#### Vollständige App
+#### Demo App
 http://foto-gether.appspot.com
 
 
