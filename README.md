@@ -11,3 +11,6 @@ Hier findet Ihr die versprochenen Informationen zum Event [HTML5 Live-Cooking] (
 
 #### Vollständige App
 http://foto-gether.appspot.com
+
+
+![Screenshot](https://raw.githubusercontent.com/markstein/HTML5-Live-Cooking/master/foto-gether-screen.jpg)
