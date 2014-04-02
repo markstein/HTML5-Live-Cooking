@@ -1,6 +1,6 @@
 ## HTML5-Live-Cooking
 
-Hier findet Ihr die versprochenen Informationen zum Event "HTML5 Live-Cooking" https://www.xing.com/events/html5-live-cooking-1340960 der JUG-Ostfalen vom 27.03.2014 bei der TRIOLOGY in Braunschweig.
+Hier findet Ihr die versprochenen Informationen zum Event [HTML5 Live-Cooking] (https://www.xing.com/events/html5-live-cooking-1340960) der JUG-Ostfalen vom 27.03.2014 bei der TRIOLOGY GmbH in Braunschweig.
 
 #### Quellen und Folien zum Vortrag
 
